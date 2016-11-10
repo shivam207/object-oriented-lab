@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package nqueens;
 
 import javafx.geometry.HPos;
@@ -18,7 +14,7 @@ import javafx.scene.layout.StackPane;
 
 /**
  *
- * @author kshitij10496
+ * @author shivam207
  */
 public class Chessboard{
 
@@ -46,11 +42,11 @@ public class Chessboard{
                     color = "white";
                 } 
                 else {
-                    color = "gray";
+                    color = "black";
                 }
                 
                 if (solution[row][col] == 1) {
-                    Image image = new Image("file:src/images/chessqueen.png");
+                    Image image = new Image("file:src/images/chessqueen5.png");
                     ImageView imageview = new ImageView(image);
                     imageview.setImage(image);
                     imageview.setFitWidth(400/size);

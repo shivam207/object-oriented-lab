@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package nqueens;
 
 import java.util.ArrayList;
@@ -23,7 +19,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author shivam
+ * @author shivam207
  */
 public class Greeter extends Application {
     
@@ -41,7 +37,7 @@ public class Greeter extends Application {
         
         TextField queens = new TextField();
         HBox queensLayout = createHBox(Pos.CENTER);
-        HBox.setHgrow(queens, Priority.ALWAYS);
+//        HBox.setHgrow(queens, Priority.ALWAYS);
         queensLayout.getChildren().addAll( label1, queens);
         
         // adding confirmation options
@@ -55,15 +51,12 @@ public class Greeter extends Application {
         cancel.setOnAction(e -> window.close() );
         HBox options = createHBox(Pos.CENTER_RIGHT);
         options.getChildren().addAll(label2, submit, cancel);
-        
         // creating final layout and upstaging
         VBox center = new VBox();
         center.setAlignment(Pos.CENTER);
         center.getChildren().addAll(queensLayout, options);
-        BorderPane layout = new BorderPane();
-        layout.setCenter(center);
-        Scene scene = new Scene(layout, 500, 200);
-        window.setTitle("N-Queens Problem");
+        Scene scene = new Scene(center, 600, 200);
+        window.setTitle("NQueens Problem");
         window.setScene(scene);
         window.show();
     }
@@ -118,7 +111,7 @@ public class Greeter extends Application {
         Stage window = new Stage();
         BorderPane layout = new BorderPane();
         layout.setCenter(board);
-//        answer=false;
+
         Label label2 = new Label();
         label2.setText("Number of Possible solutions are : ");
         Button next = new Button("Next");

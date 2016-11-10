@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package nqueens;
 
 import static java.lang.Math.abs;
@@ -10,7 +5,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author kshitij10496
+ * @author shivam207
  */
 public class NQueens {
 
